@@ -1,0 +1,107 @@
+.vistos-recente {
+    background-color: #FFF;
+}
+
+.vistos-recente-topicos {
+    background: var(--azul-degrade);
+    padding: 24px 0px;
+}
+
+.vistos-recente-texto {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+.vistos-recente-botoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.vistos-recente-botoes li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+ul.vistos-recente-botoes {
+    justify-content: center;
+}
+
+.novidades {
+    padding: 1em;
+}
+
+.novidades-titulo {
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.novidades-texto {
+    color: var(--azul);
+    font-weight: 300;
+    margin: 1em 0 1.5em 0;
+}
+
+.novidades-input {
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    padding: 10px 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.novidades-input::placeholder {
+    color: var(--azul);
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    background: url(../img/Email.svg);
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .vistos-recente-texto {
+        font-size: 24px;
+    }
+
+    .botoes-ancora.topicos-link {
+        font-size: 24px;
+    }
+
+    .novidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .novidades-titulo {
+        font-size: 24px;
+    }
+
+    .novidades-descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .novidades-input {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .vistos-recente-topicos {
+        padding: 3em 22vw;
+    }
+
+    .novidades {
+        padding: 3em 20vw;
+    }
+}
