@@ -78,147 +78,116 @@
                 <img class="container-imagem" src="./assets/img/Compras.svg" alt="Carrinho de compras">
                 <p class="container-texto">Minha sacola</p>
             </a>
-            <a href="cadastro.html" class="container-link">
+            <a href="#" class="container-link">
                 <img class="container-imagem" src="./assets/img/Usuário.svg" alt="Meu perfil">
                 <p class="container-texto">Meu perfil</p>
             </a>
         </div>
     </header>
+
     <section class="banner">
-        <h2 class="banner-titulo">Já sabe por onde começar?</h2>
-        <p class="banner-texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner-pesquisa" placeholder="Qual será sua próxima leitura?">
+        <h2 class="banner-titulo">Tela de cadastro</h2>
     </section>
-    <section class="carrossel">
-        <h2 class="carrossel-titulo">Últimos Lançamentos</h2>
-        <!-- Slider main container -->
-        <div class="carrossel-container">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="./assets/img/ApacheKafka.png" alt="Livro sobre Apache Kafka e Spring Boot">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/Javascript.png" alt="Livro sobre Javascript Assertivo"></img>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/Liderança.png" alt="Livro sobre Liderança em Design">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/Portugol.png" alt="Livro sobre lógica de programação com Portugol">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/img/Guia Front-end.png" alt="Livro sobre Guia Front-end">
-                    </div>
-                </div>
+    
+    <main class="principal">
+        <h2 class="principal__titulo">Dados do cadastro</h2>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+        <form class="principal__formulario" id="formulario" target="_blank"
+            onsubmit="location.replace('./cadastro-finalizado.html')">
+            <h3 class="principal__subtitulo">Dados pessoais</h3>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="nome">Nome Completo</label>
+                <input name="nome" id="nome" class="campo__escrita" required />
             </div>
-
-            <div class="card">
-                <div class="card-descricao">
-                    <div class="descricao">
-                        <h3 class="descricao-titulo">Talvez você também se interesse por...</h3>
-                        <h2 class="descricao-titulo-texto">Angular 11 e Firebase</h2>
-                        <p class="descricao-texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                    </div>
-                    <img src="./assets/img/Angular.png" alt="Angular" class="descricao-imagem">
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="nascimento">Nascimento</label>
+                    <input name="nascimento" id="nascimento" type="date" class="campo__escrita" required />
                 </div>
-
-                <div class="card-botoes">
-                    <ul class="botoes">
-                        <li class="botoes-item"><img src="./assets/img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botoes-item"><img src="./assets/img/Compras.svg" alt="Adicionar ao carrinho"></li>
-                    </ul>
-                    <a href="#" class="botoes-ancora">Saiba mais</a>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="telefone">Contato</label>
+                    <input name="telefone" id="telefone" type="tel" placeholder="(XX) XXXXX-XXXX" class="campo__escrita"
+                        required />
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="mais-vendidos">
-        <h2 class="vendidos-titulo">Mais vendidos</h2>
-        <!-- Slider main container -->
-        <div class="carrossel-container">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./assets/img/Portugol.png" alt="Livro sobre lógica de programação com Portugol">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img/Guia Front-end.png" alt="Livro sobre Guia Front-end">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img/ApacheKafka.png" alt="Livro sobre Apache Kafka e Spring Boot">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img/Javascript.png" alt="Livro sobre Javascript Assertivo"></img>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/img/Liderança.png" alt="Livro sobre Liderança em Design">
-                        </div>
-                    </div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="email">E-mail</label>
+                <input name="email" id="email" type="email" class="campo__escrita" required />
             </div>
 
-            <div class="card">
-                <div class="card-descricao">
-                    <div class="descricao-vendidos">
-                        <div class="descricao-detalhada">
-                            <h3 class="descricao-titulo-vendidos">Autora do Mês</h3>
-                            <h2 class="descricao-titulo-texto">Juliana Agarikov</h2>
-                            <p class="descricao-texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
-                        </div>
-                    </div>
-                    <img src="./assets/img/Perfil-escritora 1-1.png" alt="Juliana Agarikov - Analista de sistemas e Escritora" class="descricao-imagem">
-                </div>
+            <h3 class="principal__subtitulo">Endereço</h3>
 
-                <div class="card-botoes">
-                    <ul class="botoes">
-                        <li class="botoes-item"><img src="./assets/img/Favoritos.svg" alt="Favoritar livro"></li>
-                        <li class="botoes-item"><img src="./assets/img/Compras.svg" alt="Adicionar ao carrinho"></li>
-                    </ul>
-                    <a href="#" class="botoes-ancora">Saiba mais</a>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="cep">CEP</label>
+                <input name="cep" id="cep" class="campo__escrita" required />
+                <div id="erro"></div>
+            </div>
+
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="endereco">Endereço</label>
+                <input name="endereco" id="endereco" class="campo__escrita" required />
+            </div>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="numero">Numero</label>
+                    <input name="numero" id="numero" class="campo__escrita" required />
+                </div>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="complemento">Complemento</label>
+                    <input name="complemento" id="complemento" class="campo__escrita" />
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="vistos-recente">
-        <div class="vistos-recente-topicos">
-            <h3 class="vistos-recente-texto">Tópicos visitados recentemente</h3>
-            <ul class="vistos-recente-botoes">
-                <li><a href="#" class="botoes-ancora topicos-link">Android</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">Marketing Digital</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">Agile</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">Startups</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">HTML & CSS</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">Phyton</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">OO</a></li>
-                <li><a href="#" class="botoes-ancora topicos-link">Java</a></li>
-            </ul>
-        </div>
-        <div class="novidades">
-            <div class="novidades-descricao">
-                <h3 class="novidades-titulo">Fique por dentro das novidades!</h3>
-                <p class="novidades-texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="formulario__campo">
+                <label class="campo__etiqueta" for="bairro">Bairro</label>
+                <input name="bairro" id="bairro" class="campo__escrita" required />
             </div>
-            <input type="search" class="novidades-input" placeholder="Cadastre seu e-mail">
-        </div>
-    </section>
+            <div class="formulario__dupla">
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="cidade">Cidade</label>
+                    <input name="cidade" id="cidade" class="campo__escrita" required />
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="estado">UF</label>
+                    <select id="estado" name="estado" class="campo__escrita">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-botao-enviar">
+                <input type="submit" value="Enviar formulário" class="formulario__botao" id="enviar">
+            </div>
+
+        </form>
+    </main>
 
     <hr>
 
@@ -310,5 +279,6 @@
             },
         });
     </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
