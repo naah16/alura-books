@@ -12,3 +12,7 @@
 .cadastro__subtitulo {
     margin: 1em 0;
 }
+
+.form-erro-cep {
+    margin: 10px;
+}

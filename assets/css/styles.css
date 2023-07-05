@@ -5,6 +5,7 @@
 @import url("topicos.css");
 @import url("formulario.css");
 @import url("cadastro.css");
+@import url("biblioteca.css");
 @import url("footer.css");
 
 :root {
@@ -16,6 +17,12 @@
     --fonte-secundaria: "Josefin Sans";
     --cinza: #858585;
     --cinza-escuro: #474646;
+    --button-color: #326589;
+    --text-description-color: #fc6621;
+    --text-title-color: #fc6621;
+    --text-price-color: #002f52;
+    --text-author-color: #858585;
+    --text-tag-color: #9c9c9c;
 }
 
 body {
